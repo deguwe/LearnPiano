@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVAudioPlayer.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    int currentNumber;
+    __weak IBOutlet UILabel *result;
+AVAudioPlayer *sound;
+}
+
+-(IBAction)pressButton: (id)sender;
 
 @end
